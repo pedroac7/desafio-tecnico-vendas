@@ -23,6 +23,13 @@ interface Venda {
 }
 
 function App() {
+  // --- CONFIGURAÇÃO AUTOMÁTICA DE API ---
+  // Se estiver no site (Produção), usa o Render. Se estiver no PC (Dev), usa Localhost.
+  const API_URL = import.meta.env.PROD 
+    ? 'https://desafio-backend-pedro.onrender.com/relatorio' 
+    : 'http://localhost:3000/relatorio';
+  // --
+
   const [vendas, setVendas] = useState<Venda[]>([]);
   const [loading, setLoading] = useState(false);
 
@@ -34,7 +41,7 @@ function App() {
 
   const buscarVendas = () => {
     setLoading(true);
-    axios.get('http://localhost:3000/relatorio', {
+    axios.get(API_URL, {
       params: {
         termo: termo,
         dataInicio: dataInicio,
