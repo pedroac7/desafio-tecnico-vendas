@@ -14,13 +14,19 @@ Aplicação web Full Stack desenvolvida para visualização, filtragem e exporta
 **Backend**
 * **Node.js + Express:** API REST.
 * **SQLite3:** Banco de dados SQL (Serverless/Arquivo local).
-* **Data Seeding:** População automática do banco de dados na inicialização.
+* **Hospedagem:** Vercel (Frontend) e Render (Backend).
 
 ## 📋 Funcionalidades Principais
 * **Listagem de Vendas:** Visualização de dados com formatação de moeda e data.
 * **Filtros:** Busca por termo (Produto/Categoria) e intervalo de datas.
 * **Ordenação:** Clique nos cabeçalhos da tabela para ordenar (Ascendente/Descendente).
 * **Exportação:** Geração de PDF contendo os dados filtrados na tela.
+
+## 🔗 Demonstração Online
+
+🟢 **Acesse o projeto rodando:** [CLIQUE AQUI PARA ACESSAR O SITE](https://desafio-tecnico-vendas.vercel.app/)
+
+---
 
 ## 🚀 Como Executar o Projeto
 
@@ -45,3 +51,8 @@ npm install
 npm run dev
 ```
 A aplicação estará disponível no link exibido.
+
+<img width="1172" height="571" alt="Captura de tela 2026-01-21 195420" src="https://github.com/user-attachments/assets/b2648a14-108d-4761-8114-215812615e31" />
+<img width="1186" height="626" alt="Captura de tela 2026-01-21 195339" src="https://github.com/user-attachments/assets/c51fd304-bb79-479b-a624-e16b33365e89" />
+<img width="1186" height="895" alt="Captura de tela 2026-01-21 195240" src="https://github.com/user-attachments/assets/bc2670a6-cc17-4937-8a71-42f06b5d2a82" />
+
